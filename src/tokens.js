@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
 const {
-  JWT_SECRET = 'dev-secret',
+  JWT_SECRET,
   ACCESS_TOKEN_TTL = '15m',   
   REFRESH_TOKEN_TTL_DAYS = '30',
 } = process.env;
