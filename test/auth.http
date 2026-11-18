@@ -1,16 +1,17 @@
-POST http://localhost:4001/api/auth/register
+### Register a test user
+POST http://localhost:4001/register
 Content-Type: application/json
 
 {
-  "username": "bateman",
-  "password": "secret123"
+  "username": "demo",
+  "password": "choose-a-strong-password"
 }
 
-### Login (kopiera token från svaret)
-POST http://localhost:4001/api/auth/login
+### Login to retrieve an access and refresh token
+POST http://localhost:4001/login
 Content-Type: application/json
 
 {
-  "username": "bateman",
-  "password": "secret123"
+  "username": "demo",
+  "password": "choose-a-strong-password"
 }
