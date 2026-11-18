@@ -7,7 +7,7 @@ import { prisma } from "../db.js";
 const router = express.Router();
 
 const ROUNDS = parseInt(process.env.BCRYPT_ROUNDS || "12", 10);
-const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";
+const JWT_SECRET = process.env.JWT_SECRET;
 const REFRESH_TOKEN_TTL_DAYS = parseInt(process.env.REFRESH_TOKEN_TTL_DAYS || "30", 10);
 
 function getBearer(req) {
